@@ -68,7 +68,7 @@ function App() {
         <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />
         <button type="button" onClick={checkweather}>Search</button>
       </div>
-      {loading ? (<p>Loading data…</p>) :showcards() }
+      {loading ? (<p>Loading data...</p>) :showcards() }
 
     </div>
   );
