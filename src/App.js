@@ -8,7 +8,7 @@ function App() {
   const [weather, setWeather] = useState({})
   const fetchweather = async (cityname) => {
     const API_KEY = '79e7a77c4f754354b5942032242902';
-    setloading(true);
+    
     let url = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${cityname}`
     try {
       let res = await fetch(url);
@@ -27,6 +27,7 @@ function App() {
     setloading(false);
   }
   const checkweather = () => {
+    setloading(true);
     fetchweather(city);
   }
 
