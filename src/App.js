@@ -38,11 +38,11 @@ function App() {
           <div className="weather-cards">
            <div className="weather-card">
              <h3>Temperature</h3>
-             <p>{weather.Temp}</p>
+             <p>{weather.Temp}C</p>
            </div>
            <div className="weather-card">
              <h3>Humidity</h3>
-             <p>{weather.Humidity}</p>
+             <p>{weather.Humidity}%</p>
  
            </div>
            <div className="weather-card">
